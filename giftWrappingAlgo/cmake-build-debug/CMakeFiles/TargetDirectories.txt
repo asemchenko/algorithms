@@ -1,0 +1,3 @@
+/home/asem/CLionProjects/сppAlgorithms/giftWrappingAlgo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/asem/CLionProjects/сppAlgorithms/giftWrappingAlgo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/asem/CLionProjects/сppAlgorithms/giftWrappingAlgo/cmake-build-debug/CMakeFiles/giftWrappingAlgo.dir

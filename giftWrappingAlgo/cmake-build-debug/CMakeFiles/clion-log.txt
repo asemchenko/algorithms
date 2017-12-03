@@ -1,0 +1,4 @@
+/home/asem/ProgramData/clion-2017.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/asem/CLionProjects/сppAlgorithms/giftWrappingAlgo
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/asem/CLionProjects/сppAlgorithms/giftWrappingAlgo/cmake-build-debug
