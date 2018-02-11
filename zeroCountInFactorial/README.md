@@ -1,5 +1,4 @@
-## This is programm for calculation count zero-digits at the end of
-## decimal representation n factorial
+## This is programm for calculation count zero-digits at the end of decimal representation n factorial
 
 For example:
 1) 5!=120 --> 1 zero-digit
