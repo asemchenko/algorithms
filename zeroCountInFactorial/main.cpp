@@ -7,16 +7,13 @@
 #include <cstdlib>
 typedef unsigned long long ull;
 
-ull expCoef(ull n, ull base) {
+ull zerosCount(ull n) {
 	ull res = 0;
 	while(n) {
-		n /= base;
+		n /= 5;
 		res += n;
 	}
 	return res;
-}
-ull zerosCount(ull n) {
-	return std::min(expCoef(n,2), expCoef(n,5));
 }
 
 

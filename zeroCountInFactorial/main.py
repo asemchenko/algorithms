@@ -3,13 +3,11 @@
 # by asem. Copyleft 2k18
 
 def zerosCount(n):
-    def exp(n,base):
-        r = 0
-        while n:
-            n//=base
-            r += n
-        return r
-    return min(expK(n,5), expK(n,2))
+    r = 0
+    while n:
+        n //= 5
+        r += n
+    return r
 if __name__ == "__main__":
     from sys import argv
     try:
