@@ -4,6 +4,7 @@
 #include <memory>
 #include "bubbleSort/bubbleSort.h"
 #include "selectionSort/selectionSort.h"
+#include "insertionSort/insertionSort.h"
 
 template<typename Function, typename ... Arguments>
 int measureExecutionTime(Function function, Arguments ... arguments) {
@@ -14,14 +15,19 @@ int measureExecutionTime(Function function, Arguments ... arguments) {
     return duration_cast<microseconds>(finishTime - startTime).count();
 }
 
-std::shared_ptr<ElementType> getRandomArray(long long length) {
-    auto ptr = std::shared_ptr<ElementType>(new ElementType[length], [](ElementType *p) { delete[] p;});
+std::unique_ptr<ElementType[]> getRandomArray(long long length) {
+    auto ptr = std::unique_ptr<ElementType[]>(new ElementType[length]);
     for (int i = 0; i < length; ++i) {
-        ptr.get()[i] = rand();
+        ptr[i] = rand();
     }
     return ptr;
 }
-
+std::unique_ptr<ElementType[]> randomShuffleArray(std::unique_ptr<ElementType[]> &array, int length) {
+    for (int i = 0; i < length; ++i) {
+        array[i] = rand();
+    }
+    return std::move(array);
+}
 int main(int argc, char **argv) {
     if (argc != 2) {
         fprintf(stderr, "Usage: sortingAlgorithms <arraySize>\n");
@@ -31,5 +37,8 @@ int main(int argc, char **argv) {
     printf("Array size: %lld\n==================================\n", arraySize);
     auto array = getRandomArray(arraySize);
     printf("Bubble sorting: %d microseconds\n", measureExecutionTime(bubbleSort, array.get(), arraySize));
+    array = randomShuffleArray(array, arraySize);
     printf("Selection sorting: %d microseconds\n", measureExecutionTime(selectionSort, array.get(), arraySize));
+    array = randomShuffleArray(array, arraySize);
+    printf("Insertion sorting: %d microseconds\n", measureExecutionTime(insertionSort, array.get(), arraySize));
 }

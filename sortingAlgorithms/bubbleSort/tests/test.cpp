@@ -2,25 +2,12 @@
 // Created by asem on 24.02.18.
 //
 #include <gtest/gtest.h>
-#include "../bubbleSort.h"
 #include <cstdlib>
+#include "../bubbleSort.h"
+#include "../../testingUtilities.h"
 
 TEST(BubbleSortTest, OrderTest) {
-    // testing does algorithm really sort elements
-    // implementation below - bullshit
-    srand(time(0));
-    int length = rand() % 100;
-    ElementType *elements = new ElementType[length];
-    for (int i = 0; i < 5000; ++i) {
-        for (int i = 0; i < length; ++i) {
-            elements[i] = rand();
-        }
-        bubbleSort(elements, length);
-        bool r = true;
-        for (int j = 1; j < length; ++j) {
-            if (elements[j - 1] > elements[j]) r = false;
-        }
-        ASSERT_TRUE(r);
+    for (int i = 0; i < 100; ++i) {
+        ASSERT_TRUE(checkOrder(bubbleSort, rand()%1000 /* <-- array size*/ ));
     }
-    delete[] elements;
 }

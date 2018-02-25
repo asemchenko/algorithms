@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.9)
+project(insertionSortTest)
+find_package(GTest 1.8.0 REQUIRED)
+find_package(Threads REQUIRED)
+include_directories(${GTEST_INCLUDE_DIRS})
+set(CMAKE_CXX_STANDARD 17)
+add_executable(insertionSortTest insertionSortTest.cpp ../insertionSort.cpp)
+target_link_libraries(insertionSortTest ${GTEST_LIBRARIES} Threads::Threads gtest_main)

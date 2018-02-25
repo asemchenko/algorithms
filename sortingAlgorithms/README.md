@@ -3,3 +3,4 @@
 Represented algorithms:
 * Bubble sort
 * Selection sort
+* Insertion sort
