@@ -3,6 +3,7 @@
 #include <chrono>
 #include <memory>
 #include "bubbleSort/bubbleSort.h"
+#include "selectionSort/selectionSort.h"
 
 template<typename Function, typename ... Arguments>
 int measureExecutionTime(Function function, Arguments ... arguments) {
@@ -30,4 +31,5 @@ int main(int argc, char **argv) {
     printf("Array size: %lld\n==================================\n", arraySize);
     auto array = getRandomArray(arraySize);
     printf("Bubble sorting: %d microseconds\n", measureExecutionTime(bubbleSort, array.get(), arraySize));
+    printf("Selection sorting: %d microseconds\n", measureExecutionTime(selectionSort, array.get(), arraySize));
 }
