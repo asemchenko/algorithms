@@ -15,6 +15,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="be861fb8-f744-425a-914b-4f01a4edaba6" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/doc/img0.png" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -55,8 +57,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="90">
-                <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <first_editor relative-caret-position="144">
+                <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -123,16 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="84" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="insertionSort.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/insertionSort/insertionSort.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="22" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -217,6 +209,11 @@
               <item name="sortingAlgorithms" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="sortingAlgorithms" type="462c0819:PsiDirectoryNode" />
               <item name="bubbleSort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sortingAlgorithms" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="sortingAlgorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="doc" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,7 +301,7 @@
       <workItem from="1519481055396" duration="50000" />
       <workItem from="1519544946874" duration="21000" />
       <workItem from="1519544986394" duration="6348000" />
-      <workItem from="1519576038693" duration="1406000" />
+      <workItem from="1519576038693" duration="2564000" />
     </task>
     <servers />
   </component>
@@ -341,7 +338,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21951000" />
+    <option name="totallyTimeSpent" value="23109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="53" y="368" width="1869" height="1092" extended-state="6" />
@@ -391,14 +388,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bubbleSort/tests/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bubbleSort/bubbleSort.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -773,11 +762,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/doc/img0.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="90">
-            <caret line="5" column="16" lean-forward="false" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <first_editor relative-caret-position="144">
+            <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />
