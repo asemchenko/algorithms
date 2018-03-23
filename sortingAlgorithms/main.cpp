@@ -36,9 +36,9 @@ int main(int argc, char **argv) {
     long long arraySize = atoll(argv[1]);
     printf("Array size: %lld\n==================================\n", arraySize);
     auto array = getRandomArray(arraySize);
-    printf("Bubble sorting: %d microseconds\n", measureExecutionTime(bubbleSort, array.get(), arraySize));
+    printf("   Bubble sorting: %9d microseconds\n", measureExecutionTime(bubbleSort, array.get(), arraySize));
     array = randomShuffleArray(array, arraySize);
-    printf("Selection sorting: %d microseconds\n", measureExecutionTime(selectionSort, array.get(), arraySize));
+    printf("Selection sorting: %9d microseconds\n", measureExecutionTime(selectionSort, array.get(), arraySize));
     array = randomShuffleArray(array, arraySize);
-    printf("Insertion sorting: %d microseconds\n", measureExecutionTime(insertionSort, array.get(), arraySize));
+    printf("Insertion sorting: %9d microseconds\n", measureExecutionTime(insertionSort, array.get(), arraySize));
 }
